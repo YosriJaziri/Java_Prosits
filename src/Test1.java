@@ -70,7 +70,7 @@ public class Test1 {
         System.out.println(R1);
         System.out.println("_______________________");
         System.out.println(V1);
-        mg1.afficherDetails();
+        //mg1.afficherDetails();
     }
 
 }

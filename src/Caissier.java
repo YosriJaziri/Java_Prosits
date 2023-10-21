@@ -1,5 +1,5 @@
 public class Caissier extends Employe{
-    int numCaisse;
+    private numCaisse;
     final int HOUR_PRICE = 5;
     final double HOUR_PRICE_PLUS = 5.75;
     final int MAX_HOURS = 180;
@@ -8,8 +8,11 @@ public class Caissier extends Employe{
         this.numCaisse=numCaisse;
     }
 
-    public double salary() {
-        return super.salary(MAX_HOURS, HOUR_PRICE, HOUR_PRICE_PLUS);
+    public float salary() {
+        if (nbr_heures<=180){
+            return nbr_heures * 5 ;
+        }
+        return (180 * 5 + (nbr_heures - 180)* 5,75);
     }
 
 
